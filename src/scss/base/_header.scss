@@ -1,0 +1,57 @@
+@use 'globales/variables' as v;
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    img{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+.navegador{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    gap: 0;
+    a{
+        padding: 1rem;
+        &:hover{
+            color: v.$amarillo;
+            transition: 500ms ease-in-out;
+            
+        }
+    }
+    .contactameBtn{
+        background-color: v.$amarillo;
+        border-radius: 15px;
+        padding: .2rem 1rem;
+        color: v.$negro;
+        &:hover{
+            color:v.$blanco;
+        }
+    }
+}
+
+@media (min-width: v.$tablet) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        justify-content: start;
+    }
+    .navegador{
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
