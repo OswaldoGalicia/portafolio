@@ -3,6 +3,7 @@
 .header{
     display: flex;
     flex-direction: column;
+    
 }
 
 .logo{
@@ -42,10 +43,19 @@
     }
 }
 
+.marginTop{
+    margin-top: 2rem;
+}
 @media (min-width: v.$tablet) {
     .header{
+        position: fixed;
         flex-direction: row;
         justify-content: space-between;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 1px 10px v.$negro;
+        padding: 1rem;
     }
     .logo{
         justify-content: start;
@@ -53,5 +63,8 @@
     .navegador{
         flex-direction: row;
         gap: 2rem;
+    }
+    .marginTop{
+        margin-top: 10rem;
     }
 }
