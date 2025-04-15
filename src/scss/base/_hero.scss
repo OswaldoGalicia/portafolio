@@ -12,16 +12,19 @@
         z-index: 2;
     }
     .palabras-hero{
+
         letter-spacing: .5rem;
         font-family: v.$titulos;
         font-size: 14rem;
         line-height: 1.5;
         margin-left: -20rem;
         .portafolio{
+            width: 100%;
             color: v.$blanco;
             z-index: 1;
         }
         .portafolio-principal{
+            width: 100%;
             color: v.$naranja;
             z-index: 3;
         }
