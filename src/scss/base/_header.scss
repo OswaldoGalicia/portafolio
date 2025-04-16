@@ -3,7 +3,8 @@
 .header{
     display: flex;
     flex-direction: column;
-    
+    z-index: 100;
+    backdrop-filter: blur(5px);
 }
 
 .logo{
@@ -27,13 +28,13 @@
     a{
         padding: 1rem;
         &:hover{
-            color: v.$amarillo;
+            color: v.$principal;
             transition: 500ms ease-in-out;
             
         }
     }
     .contactameBtn{
-        background-color: v.$amarillo;
+        background-color: v.$principal;
         border-radius: 15px;
         padding: .2rem 1rem;
         color: v.$negro;

@@ -13,7 +13,8 @@ body{
     font-family: v.$contenido;
     line-height: 2;
     font-size: 1.6rem;
-    background-color: v.$verde;
+    background-color: v.$fondo;
+    margin: 0;
 }
 
 h1, h2, h3, h4 {
